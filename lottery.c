@@ -21,6 +21,17 @@ int calculate_result(int white_balls[5], int power_ball)
 
 int main(int argc, char** argv)
 {
+	int result = calculate_result(white_balls, power_ball);
+ 
++    if (result < 0)
++    {
++        fprintf(stderr, "Invalid arguments\n");
++        return -1;
++    }
++
+     printf("%d percent chance of winning\n", result);
+ 
+     return 0;
     if (argc != 7)
     {
         fprintf(stderr, "Usage: %s (5 white balls) power_ball\n", argv[0]);
