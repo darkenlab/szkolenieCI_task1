@@ -23,7 +23,7 @@ int main(int argc, char** argv)
 {
 	int result = calculate_result(white_balls, power_ball);
  
-+    if (result < 0)
++    if (result < 10)
 +    {
 +        fprintf(stderr, "Invalid arguments\n");
 +        return -1;
